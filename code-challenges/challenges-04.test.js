@@ -1,69 +1,5 @@
 'use strict';
 
-/*
-describe('Testing challenge 1', () => {
-  test('It should return an array of uppercase animal names', () => {
-    const arr = ['BeAr', 'lIon'];
-    expect(updateAnimal(arr, upper)[0]).toStrictEqual('BEAR');
-    expect(updateAnimal(arr, upper)[1]).toStrictEqual('LION');
-  });
-  test('It should return an array of lowercase animal names', () => {
-    const arr = ['BeAr', 'lIon'];
-    expect(updateAnimal(arr, lower)[0]).toStrictEqual('bear');
-    expect(updateAnimal(arr, lower)[1]).toStrictEqual('lion');
-  });
-});
-
-describe('Testing challenge 2', () => {
-  test('It should return an array of names sorted alphabetically', () => {
-    expect(sortNames(['able', 'Bob'])[0]).toStrictEqual('Bob');
-  });
-});
-
-describe('Testing challenge 3', () => {
-  test('It should sort low-to-high the numbers in an array', () => {
-    expect(sortNumbers([8, 3, 2, 9, 12, 1, 115])).toStrictEqual([1, 2, 3, 8, 9, 12, 115]);
-  });
-});
-
-describe('Testing challenge 4', () => {
-  test('It should sort high-to-low the numbers in an array', () => {
-    const nums = [3,4,5,6,7];
-    expect(sortBackwards(nums)).toStrictEqual([7,6,5,4,3]);
-    expect(sortBackwards([3,2,1])).toStrictEqual([3,2,1]);
-    expect(sortBackwards([12,20,3])).toStrictEqual([20, 12, 3]);
-    expect(sortBackwards([])).toStrictEqual([]);
-    expect(sortBackwards([1])).toStrictEqual([1]);
-  });
-});
-
-describe('Testing challenge 5', () => {
-  test('It should sort strings alphabetically', () => {
-    expect(alphabetize(['alphabet', 'Zebra', 'Alphabet', 'carrot'])).toStrictEqual([ 'Alphabet', 'Zebra', 'alphabet', 'carrot']);
-    expect(alphabetize(['alphabet','Alphabet', 'carrot'])).toStrictEqual([ 'Alphabet', 'alphabet', 'carrot']);
-    expect(alphabetize([])).toStrictEqual([]);
-  });
-});
-
-describe('Testing challenge 6', () => {
-  test('It should sort items by their price', () => {
-    expect(sortByPrice([
-      {name: 'Sweatshirt', price: 45},
-      {name: 'Bookmark', price: 2.50},
-      {name: 'Tote bag', price: 15}
-    ])).toStrictEqual([
-      {name: 'Bookmark', price: 2.50},
-      {name: 'Tote bag', price: 15},
-      {name: 'Sweatshirt', price: 45},
-    ]);
-    expect(sortByPrice([{price: 12}, {price: 10}])).toStrictEqual([{price: 10}, {price: 12}]);
-    expect(sortByPrice([])).toStrictEqual([]);
-  });
-});
-
-*/
-
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
@@ -93,6 +29,8 @@ const updateAnimal = (arr, callback) => {
   });
   return newArr;
 };
+//or just: return arr.map(callback); does all the above
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
